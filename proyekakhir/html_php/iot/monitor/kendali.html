@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Warna tombol ON */
+        a[href*="D6=1"] button,
+        a[href*="D7=1"] button,
+        a[href*="D8=1"] button {
+            background-color: #D0A2F7;
+            color: rgba(255, 255, 255, 0.623);
+        }
+
+        /* Warna tombol OFF */
+        a[href*="D6=0"] button,
+        a[href*="D7=0"] button,
+        a[href*="D8=0"] button {
+            background-color: #A0E9FF;
+            color: rgba(255, 255, 255, 0.623);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <a href="publish.php?message=D6=1"><button>D6 ON</button></a>
+        <a href="publish.php?message=D6=0"><button>D6 OFF</button></a>
+        <a href="publish.php?message=D7=1"><button>D7 ON</button></a>
+        <a href="publish.php?message=D7=0"><button>D7 OFF</button></a>
+        <a href="publish.php?message=D8=1"><button>D8 ON</button></a>
+        <a href="publish.php?message=D8=0"><button>D8 OFF</button></a>
+    </center>
+</body>
+</html>
